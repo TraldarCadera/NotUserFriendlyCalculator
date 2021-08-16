@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_ground">
+
+    <!--GridLayout был выбран в качестве макета из за простоты, легкоты, красоты,
+     удобства в использовании и быстродействия отрисовки (рисует все в 1 проход) -->
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:columnCount="4">
+
+        <Button
+            android:id="@+id/button_back_space"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/_back_space"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/button_del"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/_delete"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/button_mult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/_multiply"
+            android:textSize="30sp" />
+
+
+        <ImageButton
+            android:id="@+id/everythingIsBad"
+            android:layout_width="88dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@color/blue"
+            android:padding="8dp"
+            android:contentDescription="@string/_everythingIsBad"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/fire"
+            app:tint="@color/white" />
+
+        <Button
+            android:id="@+id/button_7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/_7"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/button_8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/_8"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/button_9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/_9"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/button_minus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/_minus"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/button_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/_4"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/button_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/_5"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/button_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/_6"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/button_plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowSpan="1"
+            android:layout_columnSpan="1"
+            android:layout_gravity="fill_vertical"
+            android:layout_margin="5dp"
+            android:text="@string/_plus"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/button_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/_1"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/button_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/_2"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/button_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/_3"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/button_equal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowSpan="2"
+            android:layout_gravity="fill_vertical"
+            android:layout_margin="5dp"
+            android:text="@string/_equal"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/button_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="3"
+            android:layout_columnSpan="2"
+            android:layout_gravity="fill_horizontal"
+            android:layout_margin="5dp"
+            android:text="@string/_0"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/button_."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="@string/_."
+            android:textSize="30sp" />
+
+    </GridLayout>
+</FrameLayout>
