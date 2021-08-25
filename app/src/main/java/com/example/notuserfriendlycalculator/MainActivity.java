@@ -4,12 +4,18 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.PersistableBundle;
 import android.view.View;
-import android.widget.Button;
-import android.widget.ImageButton;
 import android.widget.TextView;
+import android.widget.VideoView;
+
+
+import com.google.android.material.button.MaterialButton;
+import com.google.android.material.textfield.TextInputLayout;
+import java.util.regex.Pattern;
+
 
 
 public class MainActivity extends AppCompatActivity {
@@ -17,9 +23,25 @@ public class MainActivity extends AppCompatActivity {
     private static final String ARG_INPUT_LINE = "INPUT_LINE";
     private static final String ARG_OUTPUT_LINE = "OUTPUT_LINE";
 
-    private Button btn0, btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9;
-    private Button btnPlus, btnMinus, btnDiv, btnMult, btnEqual, btnDot, backSpace;
-    private ImageButton callSatan;
+    private MaterialButton btn0;
+    private MaterialButton btn1;
+    private MaterialButton btn2;
+    private MaterialButton btn3;
+    private MaterialButton btn4;
+    private MaterialButton btn5;
+    private MaterialButton btn6;
+    private MaterialButton btn7;
+    private MaterialButton btn8;
+    private MaterialButton btn9;
+    private MaterialButton btnPlus;
+    private MaterialButton btnMinus;
+    private MaterialButton btnDiv;
+    private MaterialButton btnMult;
+    private MaterialButton btnEqual;
+    private MaterialButton btnDot;
+    private MaterialButton backSpace;
+    private MaterialButton callSatan;
+    private MaterialButton returnOnCalc;
 
     private String inputText;
     private String outputText;
@@ -28,9 +50,14 @@ public class MainActivity extends AppCompatActivity {
     private TextView tvOutput;
 
 
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
+        VideoView videoView = findViewById(R.id.satan_video);
+        videoView.setVideoPath("android.resource://"+getPackageName()+"/"+R.raw.satana);
 
         inputText = savedInstanceState.getString(ARG_INPUT_LINE);
         outputText = savedInstanceState.getString(ARG_OUTPUT_LINE);
@@ -53,6 +80,7 @@ public class MainActivity extends AppCompatActivity {
         btnDot = findViewById(R.id.button_dot);
         backSpace = findViewById(R.id.button_back_space);
         callSatan = findViewById(R.id.everything_is_bad);
+        returnOnCalc = findViewById(R.id.return_button);
 
         tvInput = findViewById(R.id.tvInput);
         tvOutput = findViewById(R.id.tvOutput);
@@ -142,31 +170,36 @@ public class MainActivity extends AppCompatActivity {
         callSatan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                work in progress...waiting for judgment day....
+                setContentView(R.layout.call_the_satan_activity);
+            }
+        });
+
+        returnOnCalc.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                setContentView(R.layout.activity_main);
             }
         });
 
         btnEqual.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//              Здесь будет вызываться метод расчета который считает все
-//              что находится в строке inputText и выводит result в outputText
+//                work in progress
+                arithmeticOperator(inputText);
 
             }
         });
 
     }
 
-    public double arithmeticOperator(String inputText) {
+    public int arithmeticOperator(String inputText) {
         inputText = tvInput.getText().toString();
         inputText = inputText.replaceAll("x", "*");
         inputText = inputText.replaceAll("÷", "/");
 
-//        работаю над логикой.Задуманный принцип в переводе строки в массив или в double с последующим
-//        пересчетов с учетом арифметических знаков
 
-        double result = 0.0;
-
+        int result = 0;
+        tvOutput.setText((int) result);
         return result;
     }
 

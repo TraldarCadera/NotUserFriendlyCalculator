@@ -21,5 +21,6 @@
     <string name="everything_is_bad">Вызвать Сатану</string>
     <string name="input"></string>
     <string name="output"></string>
+    <string name="return_to_calculator">Return to calculator</string>
 
 </resources>
