@@ -1,27 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/tvInput"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="30sp"
+        android:layout_height="match_parent"
         android:gravity="end"
-        android:textColor="@color/black"
         android:padding="10dp"
-        android:text="@string/input"/>
+        android:text="@string/input"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
 
     <TextView
         android:id="@+id/tvOutput"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="60sp"
+        android:layout_height="match_parent"
         android:gravity="end"
-        android:textColor="@color/black"
         android:padding="10dp"
-        android:text="@string/output"/>
+        android:text="@string/output"
+        android:textColor="@color/black"
+        android:textSize="60sp" />
 
 </LinearLayout>
