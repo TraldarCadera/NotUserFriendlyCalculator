@@ -3,17 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/markin/AndroidStudioProjects/NotUserFriendlyCalculator/app/src/main/res/layout/activity_actiivity_style.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/markin/AndroidStudioProjects/NotUserFriendlyCalculator/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/Users/markin/AndroidStudioProjects/NotUserFriendlyCalculator/app/src/main/res/layout/activity_main2.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/markin/AndroidStudioProjects/NotUserFriendlyCalculator/app/src/main/res/layout/activity_main_keyboard.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/markin/AndroidStudioProjects/NotUserFriendlyCalculator/app/src/main/res/layout/call_the_satan_activity.xml" value="0.4" />
+        <entry key="..\:/Users/markin/AndroidStudioProjects/NotUserFriendlyCalculator/app/src/main/res/layout/activity_style.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/markin/AndroidStudioProjects/NotUserFriendlyCalculator/app/src/main/res/layout/call_the_satan_activity.xml" value="0.264" />
         <entry key="..\:/Users/markin/AndroidStudioProjects/NotUserFriendlyCalculator/app/src/main/res/layout/input_layout.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/markin/AndroidStudioProjects/NotUserFriendlyCalculator/app/src/main/res/layout/keyboard_layout.xml" value="0.264" />
       </map>
     </option>
-  </component>
-  <component name="ProjectPlainTextFileTypeManager">
-    <file url="file://$PROJECT_DIR$/app/src/main/res/raw/satan.mp4" />
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />

@@ -22,5 +22,10 @@
     <string name="input"></string>
     <string name="output"></string>
     <string name="return_to_calculator">Return to calculator</string>
+    <string name="setting">Выбор темы</string>
+    <string name="style_return">Возврат к калькулятору</string>
+    <string name="happy_theme">Веселая</string>
+    <string name="doomer_theme">Грустная</string>
+    <string name="choise">Выбери тему</string>
 
 </resources>
