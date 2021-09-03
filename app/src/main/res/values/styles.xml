@@ -7,6 +7,31 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_margin">5dp</item>
         <item name="android:textSize">30sp</item>
+        <item name="android:gravity">center</item>
+        <item name="strokeWidth">2dp</item>
+        <item name="cornerRadius">8dp</item>
+
+    </style>
+
+    <style name="ButtonStyle.Sad" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/purple_200</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:gravity">center</item>
+        <item name="strokeWidth">2dp</item>
+        <item name="cornerRadius">8dp</item>
+
+    </style>
+
+    <style name="ButtonTheme" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="materialButtonStyle">@style/ButtonStyle</item>
+
+    </style>
+
+    <style name="ButtonTheme.Sad" parent="Theme.MaterialComponents.DayNight.Bridge">
+        <item name="materialButtonStyle">@style/ButtonStyle</item>
 
     </style>
 </resources>

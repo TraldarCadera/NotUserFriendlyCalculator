@@ -6,6 +6,46 @@
     android:layout_height="match_parent"
     android:background="@drawable/back_ground">
 
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_choise"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/choise"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="40sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/setting_key1"
+            style="@style/ButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/happy_theme"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_choise" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/setting_key2"
+            style="@style/ButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/doomer_theme"
+            app:layout_constraintLeft_toRightOf="@+id/setting_key1"
+            app:layout_constraintTop_toBottomOf="@id/text_choise" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
     <!--GridLayout был выбран в качестве макета из за простоты, легкоты, красоты,
      удобства в использовании и быстродействия отрисовки (рисует все в 1 проход) -->
 
@@ -13,7 +53,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:columnCount="4">
+        android:columnCount="4"
+        android:theme="@style/ButtonTheme">
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button_back_space"
